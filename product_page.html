@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="luxury">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page Sample</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <nav class="navbar shadow-lg px-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!--Logo-->
+            <a href="#" class="text-md font-bold flex items-center space-x-2">
+                <i class="bi bi-umbrella"></i>
+                <span>Skibidi Up</span>
+            </a>
+            <div class="flex space-x-8">
+                <a href="/templates/landing_page.html" class="hover:underline">Home</a>
+                <a href="#" class="hover:underline">Pricing</a>
+                <a href="#" class="hover:underline">FAQ</a>
+            </div>
+            <!--Get Started Pill Button-->
+            <!-- <button class="btn btn-sm">Get Started</button> -->
+            <!--theme select dropdown with luxury and black-->
+            <div class="dropdown dropdown-end">
+                <div tabindex="0" class="m-1 btn btn-sm">Theme</div>
+                <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
+                    <li>
+                        <a onclick="switchMyTheme('luxury')" href="#" class="flex items-center space-x-2">
+                            <div class="w-4 h-4 rounded-full bg-yellow-500"></div>
+                            <span>Luxury</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="switchMyTheme('black')" href="#" class="flex items-center space-x-2">
+                            <div class="w-4 h-4 rounded-full bg-black"></div>
+                            <span>Black</span>
+                        </a>
+                    </li>
+                    <!--add cupcake bumblebee emerald halloween coffee sunset-->
+                    <li>
+                        <a onclick="switchMyTheme('cupcake')" href="#" class="flex items-center space-x-2">
+                            <div class="w-4 h-4 rounded-full bg-pink-500"></div>
+                            <span>Cupcake</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="switchMyTheme('bumblebee')" href="#" class="flex items
+                        -center space-x-2">
+                            <div class="w-4 h-4 rounded-full bg-yellow-500"></div>
+                            <span>Bumblebee</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="switchMyTheme('emerald')" href="#" class="flex items
+                        -center space-x-2">
+                            <div class="w-4 h-4 rounded-full bg-green-500"></div>
+                            <span>Emerald</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="switchMyTheme('halloween')" href="#" class="flex items
+                        -center space-x-2">
+                            <div class="w-4 h-4 rounded-full bg-orange-500"></div>
+                            <span>Halloween</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="switchMyTheme('coffee')" href="#" class="flex items
+                        -center space-x-2">
+                            <div class="w-4 h-4 rounded-full bg-neutral-800"></div>
+                            <span>Coffee</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="switchMyTheme('sunset')" href="#" class="flex items
+                        -center space-x-2">
+                            <div class="w-4 h-4 rounded-full bg-red-500"></div>
+                            <span>Sunset</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="section-1" class="py-20">
+        <div class="container mx-auto px-4 ">
+            <div class="main-content text-center">
+                <h1 class="text-6xl font-bold mb-4">Turn $0 into $100,000</h1>
+                <h1 class="text-6xl font-bold">With your own webpage</h1>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-6 flex flex-row justify-center text-center">
+            <p style="max-width: 30rem;" class="mt-4">Deliver Impactful and attention-grabbing messages
+                to confront website visitors with the harsh realities, driving engagement and conversions.</p>
+        </div>
+        <div class="container mx-auto px-4 mt-9 flex justify-center">
+            <ol>
+                <li><i class="bi bi-check2"></i> Pay once, use forever</li>
+                <li><i class="bi bi-check2"></i> 1-minute no-code setup</li>
+                <li><i class="bi bi-check2"></i> Increase conversion rate</li>
+            </ol>
+        </div>
+        <div class="container mx-auto px-4 mt-9 flex justify-center">
+            <button class="btn btn-lg rounded-full">Get Website <i class="bi bi-arrow-right"></i></button>
+        </div>
+    </div>
+    <div id="section-2" class="bg-neutral py-28">
+        <div class="container mx-auto px-4 text-center text-primary">
+            <h1 class="text-4xl font-bold">90% of customers expect a website</h1>
+            <div class="container mx-auto px-4 mt-1 flex flex-row justify-center text-center">
+                <p style="max-width: 30rem;" class="mt-4">Deliver Impactful and attention-grabbing messages
+                    to confront website visitors with the harsh realities, driving engagement and conversions.</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-9 flex justify-center gap-10 text-center text-primary">
+            <div class="flex flex-col">
+                <i class="bi bi-emoji-heart-eyes-fill text-4xl"></i>
+                <p class="text-sm mt-1" style="max-width: 10rem;">Potential customer is interested</p>
+            </div>
+            <div class="flex flex-col">
+                <i class="bi bi-emoji-neutral-fill text-4xl"></i>
+                <p class="text-sm mt-1" style="max-width: 10rem;">Doesn't find a reason to buy right now</p>
+
+            </div>
+            <div class="flex flex-col">
+                <i class="bi bi-emoji-grimace-fill text-4xl"></i>
+                <p class="text-sm mt-1" style="max-width: 10rem;">Leaves and never comes back</p>
+
+            </div>
+        </div>
+    </div>
+    <div id="section-3" class="py-20">
+        <div class="container mx-auto px-4 pt-10 text-center">
+            <h1 class="text-4xl font-bold mb-4">Give your customers a reason</h1>
+            <h1 class="text-4xl font-bold">to buy today, <mark>not tomorrow</mark></h1>
+            <div class="container mx-auto px-4 mt-1 flex flex-row justify-center text-center">
+                <p style="max-width: 30rem;" class="mt-4">Deliver Impactful and attention-grabbing messages
+                    to confront website visitors with the harsh realities, driving engagement and conversions.</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-32 mt-20 grid grid-cols-2 justify-center gap-10 text-center">
+            <div class="join join-vertical w-full">
+                <div class="collapse collapse-plus join-item border border-base-300">
+                    <input type="radio" name="my-accordion-4" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">
+                        Hey There!
+                    </div>
+                    <div class="collapse-content text-center mr-8">
+                        <i class="text-2xl bi bi-hand-thumbs-up-fill"></i>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus join-item border border-base-300">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">
+                        Click Here
+                    </div>
+                    <div class="collapse-content text-center mr-8">
+                        <i class="text-2xl bi bi-emoji-sunglasses-fill"></i>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus join-item border border-base-300">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">
+                        And Here
+                    </div>
+                    <div class="collapse-content text-xl font-medium mr-8">
+                        <i class="text-2xl bi bi-emoji-sunglasses-fill"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="mockup-phone border-primary">
+                    <div class="camera"></div> 
+                    <div class="display">
+                      <div class="artboard artboard-demo phone-1">Hi.</div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div id="section-4" class="bg-neutral py-10">
+        <h1 class="text-4xl font-bold text-center">Make your product a no-brainer purchase</h1>
+        <div class="container mx-auto px-72 py-10 text-start grid grid-cols-2 gap-4">
+            <!--two cards-->
+            <div class="card shadow-lg bg-base-100">
+                <div class="card-body">
+                    <h1 class="text-2xl font-bold">Single Page Website</h1>
+                    <h1><s>$150</s> <span class="text-3xl font-bold">$100</span> <span class="text-xs">CAD</span></h1>
+                    <ol class="mt-2">
+                        <li><i class="bi bi-check2"></i> Pay once, use forever</li>
+                        <li><i class="bi bi-check2"></i> 1-minute no-code setup</li>
+                        <li><i class="bi bi-check2"></i> Increase conversion rate</li>
+                    </ol>
+                    <!--pill button get skibidi ->-->
+                    <button class="btn rounded-full mt-4">Get Skibidi <i class="bi bi-arrow-right"></i></button>
+                    <!--small text saying "Get once, use forever"-->
+                    <p class="text-xs text-center">Pay once. Access forever.</p>
+                </div>
+            </div>
+            <div class="card shadow-lg bg-base-100">
+                <div class="card-body">
+                    <h1 class="text-2xl font-bold">3 Page Website</h1>
+                    <h1><s>$250</s> <span class="text-3xl font-bold">$150</span> <span class="text-xs">CAD</span></h1>
+                    <ol class="mt-2">
+                        <li><i class="bi bi-check2"></i> Pay once, use forever</li>
+                        <li><i class="bi bi-check2"></i> 1-minute no-code setup</li>
+                        <li><i class="bi bi-check2"></i> Increase conversion rate</li>
+                    </ol>
+                    <!--pill button get skibidi ->-->
+                    <button class="btn rounded-full mt-4">Get Website <i class="bi bi-arrow-right"></i></button>
+                    <p class="text-xs text-center">Pay once. Access forever.</p>
+
+                </div>
+            </div>
+  
+        </div>
+    </div>
+
+    <script>
+        function switchMyTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+        }
+    </script>
+</body>
+
+</html>
