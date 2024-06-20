@@ -1,0 +1,163 @@
+/* my-component-library.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Default Theme Variables */
+:root {
+  --bg-color: #1f2937;
+  --bg-color-light: #f3f4f6;
+  --text-color: white;
+  --hover-bg-color: #111827;
+  --focus-outline-color: #4A5568;
+  --body-bg-color: #ffffff;
+
+  /* Primary Button */
+  --btn-primary-bg-color: #2563eb;
+  --btn-primary-text-color: white;
+  --btn-primary-hover-bg-color: #1d4ed8;
+
+  /* Secondary Button */
+  --btn-secondary-bg-color: #4b5563;
+  --btn-secondary-text-color: white;
+  --btn-secondary-hover-bg-color: #374151;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --bg-color: #1f2937;
+  --bg-color-light: #f3f4f6;
+  --text-color: white;
+  --hover-bg-color: #111827;
+  --focus-outline-color: #4A5568;
+  --body-bg-color: #111827;
+
+  /* Primary Button */
+  --btn-primary-bg-color: #2563eb;
+  --btn-primary-text-color: white;
+  --btn-primary-hover-bg-color: #1d4ed8;
+
+  /* Secondary Button */
+  --btn-secondary-bg-color: #4b5563;
+  --btn-secondary-text-color: white;
+  --btn-secondary-hover-bg-color: #374151;
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  --bg-color: #67789a;
+  --bg-color-light: #1f2937;
+  --text-color: #1f2937;
+  --hover-bg-color: #e5e7eb;
+  --focus-outline-color: #a0aec0;
+  --body-bg-color: #f1f4d5;
+
+  /* Primary Button */
+  --btn-primary-bg-color: #4a00ff;
+  --btn-primary-text-color: white;
+  --btn-primary-hover-bg-color: #3f00e7;
+
+  /* Secondary Button */
+  --btn-secondary-bg-color: #4b5563;
+  --btn-secondary-text-color: white;
+  --btn-secondary-hover-bg-color: #374151;
+}
+
+/* Luxury Theme */
+[data-theme="luxury"] {
+  --bg-color: #f3f4f6;
+  --bg-color-light: #1f2937;
+  --text-color: #dca54c;
+  --hover-bg-color: #d1d5db;
+  --focus-outline-color: #a0aec0;
+  --body-bg-color: #09090b;
+
+  /* Primary Button */
+  --btn-primary-bg-color: #161616;
+  --btn-primary-text-color: #dca54c;
+  --btn-primary-hover-bg-color: #121213;
+
+  /* Secondary Button */
+  --btn-secondary-bg-color: #331800;
+  --btn-secondary-text-color: #ffe7a3;
+  --btn-secondary-hover-bg-color: #2b1300;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+  /* font-family: 'Roboto', sans-serif; */
+}
+
+/* Button styles */
+.cc-btn {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  /* text-transform: uppercase; */
+  transition: all 0.05s ease-in-out;
+  border: none;
+  outline: none;
+}
+
+/* Primary Button styles */
+.cc-btn-primary {
+  background-color: var(--btn-primary-bg-color);
+  color: var(--btn-primary-text-color);
+}
+
+.cc-btn-primary:hover {
+  background-color: var(--btn-primary-hover-bg-color);
+}
+
+/* Secondary Button styles */
+.cc-btn-secondary {
+  background-color: var(--btn-secondary-bg-color);
+  color: var(--btn-secondary-text-color);
+}
+
+.cc-btn-secondary:hover {
+  background-color: var(--btn-secondary-hover-bg-color);
+}
+
+.cc-btn:active {
+  transform: scale(0.95);
+}
+
+.cc-btn:focus {
+  /* outline: 2px solid var(--focus-outline-color);
+  outline-offset: 2px; */
+}
+
+/* Click animation styles */
+.click-animation {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  transform: scale(0);
+  animation: clickEffect 0.5s ease-out;
+  pointer-events: none;
+}
+
+@keyframes clickEffect {
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
