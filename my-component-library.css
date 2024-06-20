@@ -36,6 +36,9 @@
   --text-color: white;
   --hover-bg-color: #111827;
   --focus-outline-color: #4A5568;
+  
+
+  /* Body */
   --body-bg-color: #111827;
 
   /* Primary Button */
@@ -56,6 +59,8 @@
   --text-color: #1f2937;
   --hover-bg-color: #e5e7eb;
   --focus-outline-color: #a0aec0;
+
+  /* Body */
   --body-bg-color: #f1f4d5;
 
   /* Primary Button */
@@ -76,6 +81,8 @@
   --text-color: #dca54c;
   --hover-bg-color: #d1d5db;
   --focus-outline-color: #a0aec0;
+
+  /* Body */
   --body-bg-color: #09090b;
 
   /* Primary Button */
